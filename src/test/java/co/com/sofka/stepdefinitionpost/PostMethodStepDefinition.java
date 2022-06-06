@@ -1,7 +1,6 @@
 package co.com.sofka.stepdefinitionpost;
 
 import co.com.sofka.jsonclass.RequestAutenticacion;
-import co.com.sofka.jsonclass.ResponseToken;
 import co.com.sofka.setup.ServiceSetupRestfulBookerPost;
 import co.com.sofka.stepdefinitionget.GetMethodStepDefinition;
 import io.cucumber.java.es.Cuando;
@@ -13,14 +12,13 @@ import io.restassured.specification.RequestSpecification;
 import org.apache.http.HttpStatus;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 
-import static co.com.sofka.util.Claves.*;
+import static co.com.sofka.util.Claves.PASSWORD;
+import static co.com.sofka.util.Claves.USER;
 import static co.com.sofka.util.ConstantesNumericas.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
-import static org.hamcrest.Matchers.notNullValue;
 
 public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
 
