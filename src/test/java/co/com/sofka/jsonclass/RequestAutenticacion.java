@@ -1,6 +1,6 @@
 package co.com.sofka.jsonclass;
 
-public class Autenticacion{
+public class RequestAutenticacion {
 	private String password;
 	private String username;
 

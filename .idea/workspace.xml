@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f7b2b03-069b-4057-9dff-d49689c45c87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/util/Log4jValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/runners/TestMethodGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/setup/ServiceSetupRestfulBookerGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/methodGet.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02acbf662108c92127b869531c4e37fc01a88729" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/5347825256068c2e4a403f6b5b388c7b00953e73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/615203748817a69a7fba0050043490bf42f5b912" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7bc57d63738c4be91f7d8353e0fa809824a9bad9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ac8fe9dd7e3562422e4e8af1e895b79c859e1786" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3c7deb034204e9ba9dd3ddc0bc479c5d6089d7c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b50f420137b0884e2a03ec7148795ae37dea6062" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/jsonclass/Autenticacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/jsonclass/RequestAutenticacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Substep Feature" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,15 +57,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/Cursos/IntroduccionAutomatizacionPruebas/RetoPOM_ConPageFactory",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Cursos/IntroduccionAutomatizacionPruebas/RetoPOM_ConPageFactory&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.TestMethodPost">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RetoRest_assured.test" />
@@ -168,6 +176,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/co/com/sofka/runners/Prueba.java</url>
           <line>58</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

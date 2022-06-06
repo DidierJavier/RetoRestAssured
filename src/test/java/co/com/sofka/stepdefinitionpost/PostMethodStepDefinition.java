@@ -1,24 +1,28 @@
 package co.com.sofka.stepdefinitionpost;
 
-import co.com.sofka.jsonclass.Autenticacion;
-import co.com.sofka.setup.ServiceSetupRestfulBookerGet;
+import co.com.sofka.jsonclass.RequestAutenticacion;
+import co.com.sofka.jsonclass.ResponseToken;
 import co.com.sofka.setup.ServiceSetupRestfulBookerPost;
 import co.com.sofka.stepdefinitionget.GetMethodStepDefinition;
-import co.com.sofka.util.Claves;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import jxl.common.Assert;
+import org.apache.hc.core5.util.Asserts;
 import org.apache.http.HttpStatus;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 
 import static co.com.sofka.util.Claves.PASSWORD;
 import static co.com.sofka.util.Claves.USER;
+import static co.com.sofka.util.ConstantesNumericas.*;
 import static io.restassured.RestAssured.given;
+import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
@@ -30,7 +34,7 @@ public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
     private RequestSpecification request;
     @Dado("que el estudiante cuenta con el usuario {string} y la contrasena {string} validas")
     public void queElEstudianteCuentaConElUsuarioYLaContrasenaValidas(String username, String password) {
-        Autenticacion user = new Autenticacion();
+        RequestAutenticacion user = new RequestAutenticacion();
         user.setUsername(USER.clave);
         user.setPassword(PASSWORD.clave);
         try {
@@ -66,5 +70,28 @@ public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
                 .all()
                 .statusCode(HttpStatus.SC_OK)
                 .body("token", notNullValue());
+
+        ResponseToken userResponse = response.then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_OK)
+                .extract()
+                .body()
+                .as(ResponseToken.class);
+        userResponse.getToken();
+
+
+
+        String token = response.then()
+                .log()
+                .all()
+                .statusCode(HttpStatus.SC_OK)
+                .extract()
+                .body().asString();
+        LOGGER.info(token);
+        LOGGER.info(from(token).get("token"));
+        String token2 = token.substring(DIEZ.valor, VEINTICINCO.valor);
+        Assertions.assertEquals(QUINCE.valor, token2.length());
+        Matchers.hasSize(15);
     }
 }
