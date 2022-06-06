@@ -1,6 +1,4 @@
 
-<
-build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 ^
 .src/test/java/co/com/sofka/runners/Prueba.java,0\d\0d38a69bd880ba66c3c9dd3aeebe69037471c80d
 d
