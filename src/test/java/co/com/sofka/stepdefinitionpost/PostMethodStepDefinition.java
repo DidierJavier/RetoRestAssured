@@ -10,16 +10,13 @@ import io.cucumber.java.es.Entonces;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import jxl.common.Assert;
-import org.apache.hc.core5.util.Asserts;
 import org.apache.http.HttpStatus;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 
-import static co.com.sofka.util.Claves.PASSWORD;
-import static co.com.sofka.util.Claves.USER;
+import static co.com.sofka.util.Claves.*;
 import static co.com.sofka.util.ConstantesNumericas.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
@@ -65,23 +62,6 @@ public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
 
     @Entonces("obtiene el token de autenticacion")
     public void obtieneElTokenDeAutenticacion() {
-        response.then()
-                .log()
-                .all()
-                .statusCode(HttpStatus.SC_OK)
-                .body("token", notNullValue());
-
-        ResponseToken userResponse = response.then()
-                .log()
-                .all()
-                .statusCode(HttpStatus.SC_OK)
-                .extract()
-                .body()
-                .as(ResponseToken.class);
-        userResponse.getToken();
-
-
-
         String token = response.then()
                 .log()
                 .all()
@@ -89,9 +69,9 @@ public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
                 .extract()
                 .body().asString();
         LOGGER.info(token);
+        String tokenLength = token.substring(DIEZ.valor, VEINTICINCO.valor);
+        Assertions.assertEquals(QUINCE.valor, tokenLength.length());
+        LOGGER.info("Ha obtenido el token de forma correcta, su token es: ");
         LOGGER.info(from(token).get("token"));
-        String token2 = token.substring(DIEZ.valor, VEINTICINCO.valor);
-        Assertions.assertEquals(QUINCE.valor, token2.length());
-        Matchers.hasSize(15);
     }
 }

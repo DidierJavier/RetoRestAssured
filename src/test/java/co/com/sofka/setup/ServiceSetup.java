@@ -10,6 +10,7 @@ public class ServiceSetup {
     private static final String BASE_PATH = "/api";
     protected static final String LOGIN_RESOURCE = "/login";
 
+
     protected void generalSetup(){
         setUpLog4j2();
         setUpBases();

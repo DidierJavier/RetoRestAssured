@@ -14,6 +14,7 @@ import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 
+import static co.com.sofka.util.ConstantesNumericas.DOSMIL;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
 
@@ -60,13 +61,11 @@ public class GetMethodStepDefinition extends ServiceSetupRestfulBookerGet {
                 .statusCode(HttpStatus.SC_OK)
                 .extract()
                 .body().asString();
+         Assertions.assertNotNull(usersId);
          LOGGER.info(usersId);
          LOGGER.info(from(usersId).get("[0].bookingid"));
-
-//        response.then()
-//                .log().all()
-//                .statusCode(HttpStatus.SC_OK)
-//                .extract()
-//                .body();
+         int usersIdLength = usersId.length();
+         Assert.assertTrue(usersIdLength > DOSMIL.valor);
+         LOGGER.info("Se han obtenido todos los identificadores");
     }
 }

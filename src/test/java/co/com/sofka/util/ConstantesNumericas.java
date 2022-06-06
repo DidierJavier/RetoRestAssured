@@ -5,7 +5,9 @@ public enum ConstantesNumericas {
     DIEZ(10),
     VEINTICINCO(25),
 
-    QUINCE(15);
+    QUINCE(15),
+
+    DOSMIL(2000);
 
     public int valor;
 

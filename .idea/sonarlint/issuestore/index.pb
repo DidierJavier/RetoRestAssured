@@ -11,7 +11,5 @@ r
 Bsrc/test/java/co/com/sofka/setup/ServiceSetupRestfulBookerGet.java,1\1\116b0e4dfe6cf212088347ba83100c26869ef853
 a
 1src/test/java/co/com/sofka/runners/LoginTest.java,e\a\eaf09638be29c31b3d061ffea0d3e465f294ee57
-b
-2src/test/java/co/com/sofka/setup/ServiceSetup.java,6\9\6990028eec46ef9a777511356ec5b9abfc874380
 r
 Bsrc/test/java/co/com/sofka/stepdefinition/LoginStepDefinition.java,9\b\9b38b7403d76873f9ec4b96f74bf3e612646a9de
