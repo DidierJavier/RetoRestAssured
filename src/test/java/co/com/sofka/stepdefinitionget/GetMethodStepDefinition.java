@@ -13,9 +13,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 
 import static co.com.sofka.util.Claves.BOOKINGID;
-import static co.com.sofka.util.Claves.TOKEN;
 import static co.com.sofka.util.ConstantesNumericas.*;
-import static co.com.sofka.util.ConstantesNumericas.SIETE;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
 
