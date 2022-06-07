@@ -5,6 +5,8 @@ public enum Claves {
     USER("admin"),
     PASSWORD("password123"),
 
+    BOOKINGID("bookingid"),
+
     TOKEN("token");
 
     public String clave;

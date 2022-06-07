@@ -14,8 +14,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
-import static co.com.sofka.util.Claves.PASSWORD;
-import static co.com.sofka.util.Claves.USER;
+import static co.com.sofka.util.Claves.*;
 import static co.com.sofka.util.ConstantesNumericas.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
@@ -52,6 +51,9 @@ public class PostMethodStepDefinition extends ServiceSetupRestfulBookerPost {
                     .log()
                     .all()
                     .post(LOGIN_RESOURCE);
+            Assertions.assertEquals(OK_STATUS.valor, response.getStatusCode());
+            Assertions.assertEquals(TOKEN.clave, response.getBody().asString().substring(DOS.valor, SIETE.valor));
+            LOGGER.info(response.getStatusCode());
         } catch (Exception e){
             LOGGER.error(e.getMessage(), e);
             Assertions.fail(e.getMessage());

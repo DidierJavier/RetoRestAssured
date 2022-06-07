@@ -9,6 +9,14 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/runners/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/runners/Prueba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionget/GetMethodStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionget/GetMethodStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/util/Claves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/util/Claves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/util/ConstantesNumericas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/util/ConstantesNumericas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-113669aca5a829c8af9d02d4a11962a3ee9052cc26debc8d2b637b77826711fd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-55a21c97aa9396a757c1a3bf7a6b02721cfff5f576edeb016201c75dcf3f4352.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +168,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionpost/PostMethodStepDefinition.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="12" />
+          <line>54</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/co/com/sofka/stepdefinitionget/GetMethodStepDefinition.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -12,7 +12,10 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 
-import static co.com.sofka.util.ConstantesNumericas.DOSMIL;
+import static co.com.sofka.util.Claves.BOOKINGID;
+import static co.com.sofka.util.Claves.TOKEN;
+import static co.com.sofka.util.ConstantesNumericas.*;
+import static co.com.sofka.util.ConstantesNumericas.SIETE;
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
 
@@ -45,6 +48,8 @@ public class GetMethodStepDefinition extends ServiceSetupRestfulBookerGet {
             response = request.when()
                     .log().all()
                     .get(LOGIN_RESOURCE);
+            Assertions.assertEquals(OK_STATUS.valor, response.getStatusCode());
+            Assertions.assertEquals(BOOKINGID.clave, response.getBody().asString().substring(TRES.valor, DOCE.valor));
             LOGGER.info("Respuesta solicitada");
         } catch (Exception e){
             LOGGER.error(e.getMessage(), e);

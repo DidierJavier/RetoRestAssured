@@ -2,10 +2,20 @@ package co.com.sofka.util;
 
 public enum ConstantesNumericas {
 
+    DOS(2),
+
+    TRES(3),
+
+    SIETE(7),
     DIEZ(10),
-    VEINTICINCO(25),
+
+    DOCE(12),
 
     QUINCE(15),
+
+    VEINTICINCO(25),
+
+    OK_STATUS(200),
 
     DOSMIL(2000);
 
